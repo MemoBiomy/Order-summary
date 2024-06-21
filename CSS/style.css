@@ -1,0 +1,110 @@
+:root {
+--paleBlue: hsl(225, 100%, 94%);
+--brightBlue: hsl(245, 75%, 52%);
+--veryPaleBlue: hsl(225, 100%, 98%);
+--darkBlue: hsl(223, 47%, 23%);
+--desaturatedBlue: hsl(224, 23%, 55%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--paleBlue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* 500 700 900 */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: white;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.content h1 {
+    color: var(--darkBlue);
+    font-size: 29px;
+    font-weight: 900;
+}
+
+.content > p:first-of-type {
+    color: var(--desaturatedBlue);
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 300px;
+    margin: 19px auto 20px;
+}
+
+.music-box {
+    background-color: var(--veryPaleBlue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+}
+
+.music-box div {
+    display: flex;
+    align-items: center;
+}
+
+.music-box span {
+    color: var(--darkBlue);
+    font-weight: 900;
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+.music-box span p {
+    color: var(--desaturatedBlue);
+    font-weight: 500;
+    margin: 3px 0 0;
+}
+
+.music-box > p {
+    text-decoration: underline;
+    color: var(--brightBlue);
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btns div:first-child {
+    padding: 18px;
+    color: white;
+    background-color: var(--brightBlue);
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.bts div:last-child {
+    font-size: 17px;
+    color: var(--desaturatedBlue);
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: -6px;
+}
