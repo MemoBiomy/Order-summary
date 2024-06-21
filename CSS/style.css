@@ -25,6 +25,14 @@ body {
     font-family: "Red Hat Display", sans-serif;
 }
 
+@media (max-width: 375px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+        height: auto;
+        padding: 60px 0;
+    }
+}
+
 .card {
     overflow: hidden;
     border-radius: 15px;
@@ -33,6 +41,12 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 2px 4px 15px 1px rgb(114 128 167 / 40%)
+}
+
+@media (max-width: 375px) {
+    .card {
+        max-width: 335px;
+    }
 }
 
 .content {
@@ -53,6 +67,20 @@ body {
     font-weight: 500;
     max-width: 300px;
     margin: 19px auto 20px;
+}
+
+@media (max-width: 375px) {
+    .content {
+        padding: 30px;
+    }
+    .content h1 {
+        font-size: 24px;
+    }
+    .content > p:first-of-type{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
 
 .music-box {
@@ -96,6 +124,22 @@ body {
     color: #766cf1;
 }
 
+@media (max-width: 375px) {
+    .music-box {
+        padding: 20px 15px;
+    }
+    .music-box img {
+        width: 40px;
+    }
+    .music-box span {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .music-box > p {
+        font-size: 14px;
+    }
+}
+
 .btns div:first-child {
     padding: 18px;
     color: white;
@@ -124,4 +168,13 @@ body {
 
 .btns div:last-child:hover {
     color: var(--darkBlue);
+}
+
+@media (max-width: 375px) {
+    .btns div:first-child {
+        font-size: 15px;
+    }
+    .btns div:last-child{
+        font-size: 16px;
+    }
 }
