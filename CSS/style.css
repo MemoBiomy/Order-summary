@@ -32,6 +32,7 @@ body {
     max-width: 450px;
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 4px 15px 1px rgb(114 128 167 / 40%)
 }
 
 .content {
@@ -99,6 +100,7 @@ body {
     font-size: 17px;
     margin-bottom: 20px;
     cursor: pointer;
+    box-shadow: 3px 10px 19px 0px rgb(56 41 224 / 40%);
 }
 
 .bts div:last-child {
